@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+body {
+  background-color: #eee;
+  margin: 0;
+  font-family: Open Sans;
+}
+nav {
+  display: flex;
+  height: 80px;
+  background-color:white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+nav a { /*anchor text*/
+  flex:1;
+  text-decoration: none;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;/*root element (was im body eingestellt ist) em wäre zum umgebenden Container*/ 
+  color: black;
+  transition: all 0.2s;
+}
+nav a:hover { /*pseudo klasse*/
+  background-color: #2196f3;
+  color: white;
+}
+.active{
+  border-bottom: 10px solid #2196f3;
+  padding-top: 10px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh -80px);
+}

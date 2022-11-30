@@ -1,0 +1,62 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 6rem;
+    text-align: center;
+}
+nav {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+ul, li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    display: flex;
+    flex: 1; /*alle Elemente sind gleich groß*/
+    justify-content: space-evenly;
+    max-width: 50%;
+}
+h1 {
+    color: red;
+}
+
+@media (max-width: 700px) {
+    h1{
+        font-size: 4rem;
+        color: orange;
+    }
+}
+
+
+/*max-width gilt für kleiner gleich den Wert
+min width gilt für größer gleich den Wert*/
+@media (max-width: 600px){
+    h1{
+        color: green;
+    }
+    /*Umschalten Menü auf Senkrechte*/
+    nav {
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 800px){
+    h1 {
+        color:hotpink;
+    }
+}
+

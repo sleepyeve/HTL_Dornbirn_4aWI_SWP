@@ -1,0 +1,101 @@
+/* Farben global hier definieren */
+:root {
+    --clr-primary: #651fff;
+    --clr-blue: #46aedb;
+    --clr-blue-dark: #055e8b;
+    --clr-blue-light: #ccecfc;
+    --clr-gray-light: #b0bec5;
+    --clr-white: white;
+    --clr-black: black;
+  }  
+  body {
+    margin: 0;
+    padding:0;
+    background-color: var(--clr-blue);
+  }
+
+  .panel.pricing-table {
+    display:flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    width:72vw;
+    height:100vh;
+    margin:auto;
+    overflow: hidden;
+  }
+  .pricing-plan {
+    display: flex;
+    flex-direction: column;
+    height:75vh;
+    width:24vw;
+    padding: 0px 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-white);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .pricing-plan:nth-child(1) {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px;
+  }
+  .pricing-plan:nth-child(3) {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .pricing-plan:nth-child(-n+2):after {
+      content: '';
+      position: absolute;
+      padding-left:24vw;
+      height:65vh;
+      border-right:1px solid var(--clr-blue-light);
+  }
+  .pricing-img {
+    height:120px;
+    padding-bottom: 15px;
+  }
+  .pricing-header {
+    color: var(--clr-gray-light);
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-bottom:35px;
+  }
+  .pricing-features {
+    display: flex;
+    flex-direction: column;
+  }
+  .pricing-features-item {
+    color: var(--clr-blue-dark);
+    list-style: none;
+    border-bottom: solid 1px var(--clr-blue-light);
+    text-overflow: clip;
+    padding:15px;
+    font-size: 0.8rem;
+  }
+  .pricing-features-item:first-child{
+    border-top: solid 1px var(--clr-blue-light);
+  }
+  .pricing-price {
+    font-weight: bold;
+    color: var(--clr-blue-dark);
+    padding: 5pt;
+    font-size:2em;
+  }
+  .pricing-button {
+    justify-content: center;
+    display:flex;
+    border: 1px solid var(--clr-blue);
+    text-decoration: none;
+    padding: 10px 20px;
+    color: var(--clr-blue);
+    background-color: var(--clr-white);
+    border-radius: 5pt;
+    padding:10pt;
+    margin-bottom: 40pt;
+    width:120px;
+  }
+  .pricing-button.is-featured{
+    color: var(--clr-white);
+    background-color: var(--clr-blue);
+  }
